@@ -1,0 +1,27 @@
+<template name="vslide10">
+    <div class="vslide">
+        <div class="vslide-content"> <!-- important if you want horizontal and vertical aligning -->
+            <h2>Встроенная поддержка пользователей</h2>
+            <div class="vslide-col-1">
+{{#markdown}}
+**Устанавливаем нужные плагины**
+```bash
+$ meteor add accounts-password
+$ meteor add accounts-facebook
+$ meteor add accounts-twitter
+$ meteor add accounts-github
+...
+```
+**Прописываем appId и secret в конфиге**
+```javascript
+Accounts.loginServiceConfiguration.insert({
+    service:"facebook",
+    appId:"yourAppId",
+    secret: "yourSecret"
+});
+```
+{{/markdown}}
+                </div>
+        </div>
+    </div>
+</template>

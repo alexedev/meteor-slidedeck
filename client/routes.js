@@ -31,7 +31,7 @@ Router.map(function() {
     this.route('index.view', {
         path: '/',
         onBeforeAction: function () {
-            Session.set('siteTitle', 'Vazco SlideDeck!');
+            Session.set('siteTitle', 'Meteor Minsk');
             this.next();
         },
         waitOn: function () {
@@ -41,7 +41,7 @@ Router.map(function() {
     this.route('live.view', {
         path: '/live',
         onBeforeAction: function () {
-            Session.set('siteTitle', 'Vazco SlideDeck! - Live!');
+            Session.set('siteTitle', 'Meteor Minsk - Лайв');
             this.next();
         },
         waitOn: function () {
@@ -66,7 +66,7 @@ Router.map(function() {
     this.route('slideshow.view', {
         path: '/slideshow',
         onBeforeAction: function () {
-            Session.set('siteTitle', 'Vazco SlideDeck! - Slideshow!');
+            Session.set('siteTitle', 'Meteor Minsk - Презентация');
             this.next();
         },
         waitOn: function () {
@@ -84,7 +84,7 @@ Router.map(function() {
     this.route('login.view', {
         path: '/login',
         onBeforeAction: function () {
-            Session.set('siteTitle', 'Vazco SlideDeck! - Admin Login!');
+            Session.set('siteTitle', 'Meteor Minsk - Админка');
             this.next();
         },
         waitOn: function () {

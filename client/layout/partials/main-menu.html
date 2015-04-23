@@ -1,36 +1,36 @@
 <template name="mainMenu">
     <div class="link-list">
         <div class="menu-item">
-            <i class="fa fa-home"></i> <a href="{{pathFor 'index.view'}}">index</a>
+            <i class="fa fa-home"></i> <a href="{{pathFor 'index.view'}}">Главная</a>
         </div>
         <div class="menu-item">
-            <i class="fa fa-desktop"></i> <a href="{{pathFor 'live.view'}}">Live</a>
+            <i class="fa fa-desktop"></i> <a href="{{pathFor 'live.view'}}">Лайв</a>
         </div>
         {{#if isPrivViewEnabled}}
             <div class="menu-item">
-                <i class="fa fa-eye"></i> <a href="{{pathFor 'slideshow.view'}}">Slideshow</a>
+                <i class="fa fa-eye"></i> <a href="{{pathFor 'slideshow.view'}}">Презентация</a>
             </div>
             <hr>
             {{#if currentUser}}
                 <div class="menu-item">
-                    <i class="fa fa-toggle-on"></i> <a href="#" class="js-disable-priv-slideshow">Turn off Slideshow</a>
+                    <i class="fa fa-toggle-on"></i> <a href="#" class="js-disable-priv-slideshow">Выключить презентацию</a>
                 </div>
             {{/if}}
         {{else}}
             <hr>
             {{#if currentUser}}
                 <div class="menu-item">
-                    <i class="fa fa-toggle-off"></i> <a href="#" class="js-enable-priv-slideshow">Turn on Slideshow</a>
+                    <i class="fa fa-toggle-off"></i> <a href="#" class="js-enable-priv-slideshow">Включить презентацию</a>
                 </div>
             {{/if}}
         {{/if}}
         {{#if currentUser}}
             <div class="menu-item">
-                <i class="fa fa-user"></i> <a href="#" class="js-logout">Logout</a>
+                <i class="fa fa-user"></i> <a href="#" class="js-logout">Выход</a>
             </div>
         {{else}}
             <div class="menu-item">
-                <i class="fa fa-user"></i> <a href="{{pathFor 'login.view'}}">Login</a>
+                <i class="fa fa-user"></i> <a href="{{pathFor 'login.view'}}">Вход в админку</a>
             </div>
         {{/if}}
         <a href="#" class="close-menu-button">

@@ -1,0 +1,31 @@
+<template name="vslide12">
+    <div class="vslide">
+        <div class="vslide-content"> <!-- important if you want horizontal and vertical aligning -->
+            <h2>Простая публикация мобильных приложений</h2>
+            <div class="vslide-col-1">
+{{#markdown}}
+**Устанавливаем SDK**
+```bash
+$ meteor install-sdk android
+$ meteor install-sdk ios
+```
+**Добавляем платформы**
+```bash
+$ meteor add-platform android
+$ meteor add-platform ios
+```
+**Запускаем через симуляторы...**
+```bash
+$ meteor run android
+$ meteor run ios
+```
+**...или на девайсах**
+```bash
+$ meteor run android-device
+$ meteor run ios-device
+```
+{{/markdown}}
+            </div>
+        </div>
+    </div>
+</template>

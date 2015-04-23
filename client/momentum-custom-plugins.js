@@ -8,8 +8,8 @@
 var vazcoSideToSide = function(fromX, toX) {
     return function(options) {
         options = _.extend({
-            duration: 1000,
-            delay: 600,
+            duration: 700,
+            delay: 300,
             easing: 'ease-in-out'
         }, options);
 
