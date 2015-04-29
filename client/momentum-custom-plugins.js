@@ -1,15 +1,8 @@
-// Copyright 2014, Vazco.eu.
-// If you're searching for good Meteor developers, why not try guys who created this app?
-// Contact us at http://vazco.eu
-//
-// Momentum Plugin based on the core momentum package plugin
-//
-
 var vazcoSideToSide = function(fromX, toX) {
     return function(options) {
         options = _.extend({
             duration: 700,
-            delay: 300,
+            delay: 350,
             easing: 'ease-in-out'
         }, options);
 
